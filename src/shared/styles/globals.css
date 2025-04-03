@@ -6,6 +6,9 @@
     --color-promotions-badge-second: #0d3b44;
     --color-social-badge-first: #b3efd3;
     --color-social-badge-second: #0b4f30;
+    --color-light-gray-middle: rgba(0, 0, 0, 0.54);
+    --color-gray-shadow: #edeff1;
+    --color-gray-bg-first: #f1f3f4;
 
     --leading-button-default: 120%;
 }
