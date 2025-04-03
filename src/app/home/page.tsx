@@ -1,5 +1,6 @@
-import Inbox from './inbox/page';
+import { redirect } from 'next/navigation';
 
 export default function Home() {
-  return <Inbox />;
+  redirect('/home/inbox');
+  return null;
 }

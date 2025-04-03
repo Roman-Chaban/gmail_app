@@ -8,8 +8,10 @@ import { ArrowDown } from '@/shared/ui/icons/ArrowDown/ArrowDown';
 import { Button } from '@/shared/ui/Button/Button';
 import { Container } from '@/shared/ui/Container/Container';
 
+type Search = string;
+
 export const HeaderSearch: FC = () => {
-  const [search, setSearch] = useState<string>('');
+  const [search, setSearch] = useState<Search>('');
 
   const onSearchChange = (event: ChangeEvent<HTMLInputElement>) => {
     const { value } = event.target;
