@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme {
+    --color-updates-badge-first: #fb4c2f;
+    --color-promotions-badge-first: #98d7e4;
+    --color-promotions-badge-second: #0d3b44;
+    --color-social-badge-first: #b3efd3;
+    --color-social-badge-second: #0b4f30;
+
+    --leading-button-default: 120%;
+}
