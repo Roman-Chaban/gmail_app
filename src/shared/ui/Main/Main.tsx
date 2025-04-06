@@ -9,7 +9,7 @@ interface MainProps {
 
 export const Main: FC<MainProps> = ({ children }) => {
   return (
-    <main className='flex'>
+    <main className='flex min-h-[100vh]'>
       <Sidebar />
       {children}
       <NoteBar />

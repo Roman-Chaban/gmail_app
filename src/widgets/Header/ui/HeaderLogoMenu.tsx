@@ -29,9 +29,7 @@ export const HeaderLogoMenu: FC = () => {
           height={40}
           priority
         />
-        <span className='text-light-gray-middle inline-block text-2xl font-medium'>
-          Gmail
-        </span>
+        <span className='text-light-gray-middle inline-block text-2xl font-medium'>Gmail</span>
       </Box>
     </Container>
   );

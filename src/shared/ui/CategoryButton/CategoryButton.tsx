@@ -1,18 +1,11 @@
 import { type FC } from 'react';
 
-import {
-  type ButtonHTMLAttributes,
-  type DetailedHTMLProps,
-  type ReactNode,
-} from 'react';
+import { type ButtonHTMLAttributes, type DetailedHTMLProps, type ReactNode } from 'react';
 
 import clsx from 'clsx';
 
 export interface ButtonProps
-  extends DetailedHTMLProps<
-    ButtonHTMLAttributes<HTMLButtonElement>,
-    HTMLButtonElement
-  > {
+  extends DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement> {
   children: ReactNode;
   ariaPressed?: boolean;
   variant: 'primary' | 'secondary' | 'third';

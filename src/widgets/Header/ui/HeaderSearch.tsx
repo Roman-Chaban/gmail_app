@@ -28,9 +28,10 @@ export const HeaderSearch: FC = () => {
         id='search'
         name='search'
         type='text'
+        placeholder='Search mail'
         onChange={onSearchChange}
         value={search}
-        className='placeholder:text-light-gray-middle text-light-gray-middle min-h-[2.875rem] w-full max-w-[40rem] rounded-lg font-medium focus:outline-none'
+        className='placeholder:text-light-gray-middle placeholder:font-normal text-light-gray-middle min-h-[2.875rem] w-full max-w-[40rem] rounded-lg font-medium focus:outline-none'
       />
       <Button className='focus-visible:ring-promotions-badge-first focus:outline-none focus-visible:rounded-md focus-visible:ring-2'>
         <ArrowDown />

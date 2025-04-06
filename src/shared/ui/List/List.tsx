@@ -8,7 +8,7 @@ interface ListProps<T extends { id: ListItemKey }>
   extends HTMLAttributes<HTMLUListElement | HTMLOListElement> {
   tag: ListTag;
   renderList: Array<T>;
-  renderItem: (listItem: T) => ReactNode;
+  renderItem: (listItem: T, index: number) => ReactNode;
   getItemKey: (listItem: T) => ListItemKey;
   className?: string;
   itemClassName?: string;
@@ -25,9 +25,9 @@ export const List = <T extends { id: ListItemKey }>({
 }: ListProps<T>) => {
   return (
     <Tag className={className} {...props}>
-      {renderList.map((item) => (
+      {renderList.map((item, index) => (
         <li key={getItemKey(item)} className={itemClassName}>
-          {renderItem(item)}
+          {renderItem(item, index)}
         </li>
       ))}
     </Tag>

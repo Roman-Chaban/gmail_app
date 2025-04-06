@@ -8,9 +8,7 @@ import clsx from 'clsx';
 
 export const HeaderContent: FC = () => {
   return (
-    <Box
-      className={`${clsx('flex w-full items-center justify-between gap-5')}`}
-    >
+    <Box className={`${clsx('flex w-full items-center justify-between gap-5')}`}>
       <HeaderSearch />
       <HeaderDetails />
     </Box>
